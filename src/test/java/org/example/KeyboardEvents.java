@@ -34,6 +34,28 @@ public class KeyboardEvents {
         firstname.click();
         page.keyboard().type("Dave");
         Thread.sleep(3000);
+
+//        Select
+        page.keyboard().down("Control");
+        page.keyboard().press("KeyA");
+        page.keyboard().up("Control");
+        Thread.sleep(3000);
+
+//        Copy
+        page.keyboard().down("Control");
+        page.keyboard().press("KeyC");
+        page.keyboard().up("Control");
+        Thread.sleep(3000);
+
+//        Tab
+        page.keyboard().press("Tab");
+        Thread.sleep(3000);
+
+//        Paste
+        page.keyboard().down("Control");
+        page.keyboard().press("KeyV");
+        page.keyboard().up("Control");
+        Thread.sleep(3000);
     }
 
     @AfterSuite
